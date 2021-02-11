@@ -13,6 +13,7 @@ import { ItemComponent } from './components/cv/item/item.component';
 import { CvComponent } from './components/cv/cv/cv.component';
 import { DetailComponent } from './components/cv/detail/detail.component';
 import { StyleComponent } from './components/styles/style/style.component';
+import { RandomColorDirective } from './directives/random-color.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StyleComponent } from './components/styles/style/style.component';
     ItemComponent,
     CvComponent,
     DetailComponent,
-    StyleComponent
+    StyleComponent,
+    RandomColorDirective
   ],
   imports: [
     BrowserModule,
