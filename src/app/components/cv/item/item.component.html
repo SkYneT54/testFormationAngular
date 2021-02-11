@@ -1,5 +1,5 @@
 <div  (click)="loadDetail()">
-  <img class="rounded-circle" width="50px" height="50px" src="assets/images/{{personne.path}}" alt="Photo introuvable"/>
+  <img class="rounded-circle" width="50px" height="50px" src="assets/images/{{personne.path | images }} " alt="Photo introuvable"/>
   <div>
     <h5> {{personne.name}} {{personne.firstname}}</h5>
   </div>
