@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col">
+    <ol class="list-group" *ngFor="let todo of todos">
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-md-10">
+            <b>{{todo.name}}</b> - {{todo.content}}
+          </div>
+          <div class="col-md-2">
+            <i class="fa fa-trash" (click)="deleteTodo(todo)"></i>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="col">
+    <div class="row">
+      <label class="form-label">Name</label>
+      <input class="form-control" [(ngModel)]="todo.name" />
+    </div>
+    <div class="row">
+      <label class="form-label">Content</label>
+      <input class="form-control" [(ngModel)]="todo.content" />
+    </div>
+    <div class="row mt-2">
+      <button class="btn btn-primary" (click)="addTodo()" [disabled]="isBtnDisabled()">Ajouter</button>
+    </div>
+  </div>
+</div>

@@ -15,6 +15,9 @@ import { DetailComponent } from './components/cv/detail/detail.component';
 import { StyleComponent } from './components/styles/style/style.component';
 import { RandomColorDirective } from './directives/random-color.directive';
 import { ImagesPipe } from './pipes/images.pipe';
+import { TodoComponent } from './components/todo/todo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,16 @@ import { ImagesPipe } from './pipes/images.pipe';
     DetailComponent,
     StyleComponent,
     RandomColorDirective,
-    ImagesPipe
+    ImagesPipe,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
+
   ],
   providers: [],
   bootstrap: [AppComponent]
