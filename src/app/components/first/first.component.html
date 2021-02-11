@@ -1,0 +1,18 @@
+<p
+  [hidden] = "isHidden"
+>
+first works!
+</p>
+
+
+<div (click)="sayCoucou()">
+{{nom}}
+  </div>
+
+  <button class="btn btn-primary" (click)="afficherCacher()">Afficher / Cacher</button>
+  <input type="text" #monInput/>
+  <button (click)="changeMessage(monInput.value)">Show input message</button>
+  <p>
+    Coucou, voici le message contenu dans mon input : {{message}}
+  </p>
+<app-second></app-second>

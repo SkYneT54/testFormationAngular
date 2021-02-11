@@ -1,0 +1,4 @@
+<div [style.backgroundColor]="bgColor">
+  <input #nomCouleur type="text" (change)="changeColor(nomCouleur.value)"/>
+  <button class="btn btn-primary" (click)="changeColor(_INIT_COLOR)" >Reset</button>
+</div>
