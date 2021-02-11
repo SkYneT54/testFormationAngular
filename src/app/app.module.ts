@@ -12,6 +12,7 @@ import { ListeComponent } from './components/cv/liste/liste.component';
 import { ItemComponent } from './components/cv/item/item.component';
 import { CvComponent } from './components/cv/cv/cv.component';
 import { DetailComponent } from './components/cv/detail/detail.component';
+import { StyleComponent } from './components/styles/style/style.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DetailComponent } from './components/cv/detail/detail.component';
     ListeComponent,
     ItemComponent,
     CvComponent,
-    DetailComponent
+    DetailComponent,
+    StyleComponent
   ],
   imports: [
     BrowserModule,

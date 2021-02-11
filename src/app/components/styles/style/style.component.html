@@ -1,0 +1,19 @@
+Couleur
+<input type="color" [(ngModel)]="color">
+Taille
+<input type="number" [(ngModel)]="fontSize">
+Police
+<select  [(ngModel)]="fontFamily">
+  <option>Arial</option>
+  <option>Comic Sans MS</option>
+  <option>Times New Roman</option>
+</select>
+
+<p [ngStyle] = "{
+  color:color,
+  fontFamily:fontFamily,
+  fontSize:fontSize + 'px'
+}
+">
+  Mon super paragraphe à mettre en forme
+</p>
