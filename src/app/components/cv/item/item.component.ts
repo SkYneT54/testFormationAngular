@@ -7,10 +7,10 @@ import { Personne } from 'src/app/cv/models/personne';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  @Input() personne: Personne;
+  @Input() personne: Personne = new Personne();
   @Output() valueChangeItem=new EventEmitter<Personne>();
   constructor() {
-    this.personne = new Personne();
+
   }
 
   loadDetail(): void{
