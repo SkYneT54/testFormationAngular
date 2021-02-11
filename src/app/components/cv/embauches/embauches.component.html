@@ -1,0 +1,8 @@
+<div>
+  <p>Liste des CVs sélectionnés pour embauche</p>
+  <div class="liste">
+    <span *ngFor="let emb of embauches">
+      <app-item [personne]="emb" [height]=100 [width]=100 [isDiv]=false></app-item>
+    </span>
+  </div>
+</div>

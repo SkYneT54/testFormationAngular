@@ -18,6 +18,7 @@ import { ImagesPipe } from './pipes/images.pipe';
 import { TodoComponent } from './components/todo/todo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { EmbauchesComponent } from './components/cv/embauches/embauches.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ToastrModule } from 'ngx-toastr';
     StyleComponent,
     RandomColorDirective,
     ImagesPipe,
-    TodoComponent
+    TodoComponent,
+    EmbauchesComponent
   ],
   imports: [
     BrowserModule,

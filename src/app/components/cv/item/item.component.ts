@@ -1,4 +1,4 @@
-import { Component,Input, OnInit,EventEmitter, Output } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 import { Personne } from 'src/app/cv/models/personne';
 
 @Component({
@@ -8,12 +8,15 @@ import { Personne } from 'src/app/cv/models/personne';
 })
 export class ItemComponent implements OnInit {
   @Input() personne: Personne = new Personne();
-  @Output() valueChangeItem=new EventEmitter<Personne>();
+  @Input() height = 50;
+  @Input() width = 50;
+  @Input() isDiv = true;
+  @Output() valueChangeItem = new EventEmitter<Personne>();
   constructor() {
 
   }
 
-  loadDetail(): void{
+  loadDetail(): void {
     this.valueChangeItem.emit(this.personne);
   }
 

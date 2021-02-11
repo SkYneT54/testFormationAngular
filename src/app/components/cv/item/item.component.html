@@ -1,6 +1,19 @@
-<div  (click)="loadDetail()">
-  <img class="rounded-circle" width="50px" height="50px" src="assets/images/{{personne.path | images }} " alt="Photo introuvable"/>
+<div (click)="loadDetail()" *ngIf="isDiv">
+  <img class="rounded-circle" [ngStyle]="{
+    width:width + 'px',
+    height:height + 'px'
+  }" src="assets/images/{{personne.path | images }} " alt="Photo introuvable" />
   <div>
     <h5> {{personne.name}} {{personne.firstname}}</h5>
   </div>
 </div>
+
+<span (click)="loadDetail()" *ngIf="!isDiv">
+  <img class="rounded-circle" [ngStyle]="{
+    width:width + 'px',
+    height:height + 'px'
+  }" src="assets/images/{{personne.path | images }} " alt="Photo introuvable" />
+  <div>
+    <h5> {{personne.name}} {{personne.firstname}}</h5>
+  </div>
+</span>
